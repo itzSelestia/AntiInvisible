@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "antiinvisible",
+  "version": "${version}",
+  "name": "AntiInvisible",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/antiinvisible/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.yae.antiinvisible.client.AntiinvisibleDataGenerator"
+    ],
+    "client": [
+      "com.yae.antiinvisible.client.AntiinvisibleClient"
+    ],
+    "main": [
+      "com.yae.antiinvisible.Antiinvisible"
+    ]
+  },
+  "mixins": [
+    "antiinvisible.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
