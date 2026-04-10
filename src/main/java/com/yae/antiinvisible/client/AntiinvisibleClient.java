@@ -6,5 +6,6 @@ public class AntiinvisibleClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        AntiinvisibleConfig.load();
     }
 }
